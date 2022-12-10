@@ -13,17 +13,41 @@
 ## ⚙︎ 2. 기능 설명
 - [따릉이 최종](https://github.com/goodyoung/bikeSeoul_slackbot/tree/main/%EB%94%B0%EB%A6%89%EC%9D%B4%20%EC%B5%9C%EC%A2%85)
 ### 2-1. [따릉이_total 기능]
+- main file이다.
+- slack bot을 구동하는 file.
+- 사용자 text를 받아서 2-2,2-3 module을 이용해 대여소 3곳 조회
+- 대여소 지도 사진 파일 slack에 upload.
 ### 2-2. [bikeSeoul]
+*
+*
+*
 ### 2-3. [distance_kakaoapi]
 
-## 🙋 3. 느낀점 및 KPT 회고
-+ 느낀점
-  +~~~~
-  
+## 🙋 3. KPT 회고  
 + KPT
-  + 1. Keep(계속 해야할 것)
-    + ~~
-  + 2. Problem(문제점)
-    + ~~
-  + 3. Try(앞으로 시도할 것)
-    + ~~
+  + Keep(계속 해야할 것)
+    + api token의 암호화
+
+    + 경로 지정 (어느 컴퓨터에서도 할 수 있게)
+
+    + module의 class화 
+
+    + main 파일인 '따릉이_total'의 코드 정리가 필요하다.
+  + Problem(문제점)
+    + 지도 사진이 잘 나오긴 하지만 시간이 오래 걸린다.
+
+    + '@~' bot mention을 사용 할 때만 가능하다.(slack api에 mention이 아닌 방법이 있을 것 같다.)
+ 
+    + 거리 계산이 직선거리, 건물들이 많은 곳이라면 최적의 경로가 아닐 수 있다.
+
+  + Try(앞으로 시도할 것)
+    + python flask를 활용해 soket mode가 아닌 서버로 이용하는 방법.
+ 
+    + 이 방법을 활용 한 Web도 같이 구현하면 좋을 것 같다.
+ 
+    + 직선거리의 단점을 보완하기 위해 
+      + Dijkstra(다익스트라) 등 최단경로 알고리즘을 구현하여 거리를 계산하는 방법.
+      + kakao등 지도 api를 이용하여 최단경로를 찾는 방법.
+    + 오류 처리 ex) 다른 지역이어도 제일 가까운 곳이 나오기 때문에 입력받는 지역을 서울로 한정지어야 한다.
+
+
