@@ -3,4 +3,4 @@
 ![bikeSeoul](https://user-images.githubusercontent.com/10703294/206843948-bc91f91e-2a74-4254-ba6a-49b33905f4cd.gif)
 
 ## ⚙︎ 2. 기능 설명
-[따릉이 최종](./goodyoung/bikeSeoul_slackbot/따릉이 최종)
+[따릉이 최종](../goodyoung/bikeSeoul_slackbot/따릉이 최종)
