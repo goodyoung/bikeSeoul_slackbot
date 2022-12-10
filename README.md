@@ -24,7 +24,7 @@
 ### 2-3. [distance_kakaoapi]
 
 ## 🙋 3. KPT 회고  
-+ KPT
+### KPT
   + Keep(계속 해야할 것)
     + api token의 암호화
 
