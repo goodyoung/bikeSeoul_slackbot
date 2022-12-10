@@ -5,7 +5,7 @@ import pandas as pd
 def elec_location(region,page_num):
     url = 'https://dapi.kakao.com/v2/local/search/keyword.json'
     params = {'query': region,'page': page_num}
-    headers = {"Authorization": "KakaoAK bb9145a26ef72eaed5588d8ab300b75e"}
+    headers = {"Authorization": #kakaoapi}
     places = requests.get(url, params=params, headers=headers).json()['documents']
     return places
 
