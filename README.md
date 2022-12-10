@@ -1,3 +1,3 @@
 # bikeSeoul_slackbot
 구동 영상
-https://user-images.githubusercontent.com/10703294/206843266-a4d98fe4-0619-4112-aa82-b23674aaca03.mp4
+![bikeSeoul](https://user-images.githubusercontent.com/10703294/206843948-bc91f91e-2a74-4254-ba6a-49b33905f4cd.gif)
