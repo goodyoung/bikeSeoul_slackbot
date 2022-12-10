@@ -10,18 +10,35 @@
 ### 실행 화면
 ![bikeSeoul](https://user-images.githubusercontent.com/10703294/206843948-bc91f91e-2a74-4254-ba6a-49b33905f4cd.gif)
 
+
 ## ⚙︎ bikeSeoul_slackbot 기능 설명
 - [따릉이 최종](https://github.com/goodyoung/bikeSeoul_slackbot/tree/main/%EB%94%B0%EB%A6%89%EC%9D%B4%20%EC%B5%9C%EC%A2%85)
+
+
 ### [따릉이_total 기능]
 - main file이다.
+
 - slack bot을 구동하는 file.
+
 - 사용자 text를 받아서 2-2,2-3 module을 이용해 대여소 3곳 조회
+
 - 대여소 지도 사진 파일 slack에 upload.
 ### [bikeSeoul]
-1.
-2.
-3.
-4.
+- create_api
+따릉이 대여소 api를 부르는 함수. -> DataFrame으로 변환.
+
+- latilong
+따릉이 대여소 DataFrame과 해당 위치 위도 경도 값을 이용하여 해당 위치와 대여소 거리 계산 column 생성
+
+- bestdistance
+생성된 column을 이용하여 가장 거리가 짧은 3곳을 찾아준다.
+
+- make_map2
+대여소 3곳의 위치를 지도에 folium을 이용하여 Marker로 시각화 한다. (html file)
+
+- picture
+시각화 한 파일을 slack에 보내주기 위해 selenium의 screenshot을 활용해 사진(png)으로 변환
+
 ### [distance_kakaoapi]
 
 ## 🙋 KPT 회고  
