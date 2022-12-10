@@ -1,6 +1,7 @@
 # Slackbot을 이용한 근처 따릉이 대여소 조회 알리미
 ## 🚲 소개
 * slack에 주소를 입력하면 그 근처 최단거리(직선거리)의 따릉이 대여소 3곳의 거리와 그 위치가 표시된 지도가 나온다.
+----
 ### 팀원
 |이름|역할|github|
 |:---:|:-------:|:---:|
@@ -13,9 +14,10 @@
 
 ## ⚙︎ bikeSeoul_slackbot 기능 설명
 - [따릉이 최종](https://github.com/goodyoung/bikeSeoul_slackbot/tree/main/%EB%94%B0%EB%A6%89%EC%9D%B4%20%EC%B5%9C%EC%A2%85)
-
+----
 
 ### [따릉이_total 기능]
+----
 - main file이다.
 
 - slack bot을 구동하는 file.
@@ -24,6 +26,7 @@
 
 - 대여소 지도 사진 파일 slack에 upload.
 ### [bikeSeoul]
+----
 - create_api
 따릉이 대여소 api를 부르는 함수. -> DataFrame으로 변환.
 
@@ -40,8 +43,10 @@
 시각화 한 파일을 slack에 보내주기 위해 selenium의 screenshot을 활용해 사진(png)으로 변환
 
 ### [distance_kakaoapi]
+----
 
 ## 🙋 KPT 회고  
+----
 ### KPT
   + Keep(계속 해야할 것)
     + api token의 암호화
